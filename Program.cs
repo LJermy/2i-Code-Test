@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _2i_Code_Test
 {
@@ -30,13 +30,13 @@ namespace _2i_Code_Test
         public static void iterate(int offset, int modifier)
         {
             int increment = multiplier + offset;                    //Sets the number that the total will increase by each loop
-            int i;
+            int currentValue;
 
-            for (i = increment; i < upperLimit * modifier; i = i + increment)  //iterates starting from the calculated number and iterates through and stops before going over the upper limit
+            for (currentValue = increment; currentValue < upperLimit * modifier; currentValue = currentValue + increment)  //iterates starting from the calculated number and iterates through and stops before going over the upper limit
             {
-                Console.WriteLine(i);
+                Console.WriteLine(currentValue);
             }
-            Console.WriteLine(i + "\n");                                       //Prints the last value of i calculated, will be equal to or over the upper limit and wont itterate again
+            Console.WriteLine(currentValue + "\n");                                       //Prints the last value of i calculated, will be equal to or over the upper limit and wont itterate again
         }
     }
 }
